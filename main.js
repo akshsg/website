@@ -40,35 +40,40 @@ document.addEventListener("click",function(event){
 });
 
 
-const searchButton=document.querySelector(".search-button button");
-const makerSelect=document.querySelector("#maker");
-const typeSelect=document.querySelector("#type");
-const searchResult=document.querySelector("#search-result");
-searchButton.addEventListener("click",function(event){
-  console.log("検索");
-  event.preventDefault()
-  console.log(makerSelect.value);
-  if(makerSelect.value===""){
-    console.log("メーカーを選択してください");
-  }else{
-    console.log("検索");
-  }
-  
-  if(typeSelect.value===""){
-    console.log("車種を選択してください");
-  }else{
-    console.log(typeSelect.value);
-  }
 
-  if(makerSelect.value===""||typeSelect.value===""){
-    console.log("すべて選択してください");
-  }else{
-    console.log("検索します");
-  }
+// 検索ボタンと各選択項目を取得
+const searchButton = document.querySelector(".search-button button");
+const makerSelect = document.querySelector("#maker");
+const typeSelect = document.querySelector("#type");
+const bodytypeSelect = document.querySelector("#bodytype");
+const priceSelect = document.querySelector("#price");
+const yearSelect = document.querySelector("#year");
+const mileageSelect = document.querySelector("#mileage");
+const searchResult = document.querySelector("#search-result");
+
+// 検索ボタンが押されたときの処理
+searchButton.addEventListener("click", function(event) {
+  // ページの再読み込みを防ぐ
+  event.preventDefault();
+
+  // メーカーと車種が選択されているか確認
+  // どれか1つでも未選択ならメッセージを表示
+if (
+  makerSelect.value === "" ||
+  typeSelect.value === "" ||
+  bodytypeSelect.value === "" ||
+  priceSelect.value === "" ||
+  yearSelect.value === "" ||
+  mileageSelect.value === ""
+) {
+  searchResult.textContent = "すべての項目を選択してください";
+} else {
+  // 全部選択されていたらメッセージを消す
+  searchResult.textContent = "";
+}
+    // 選択した検索条件を表示
+    
 });
-
-
-  
 
 
 
