@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Drive</title>
+</head>
+
+<body>
+
+  <!-- ------------------------------- -->
+  <!-- ヘッダー                            -->
+  <!-- ------------------------------- -->
+  <header>
+    <div class="header-inner">
+    <h1><img src="img/rogo white.png" alt="NextDrive"></h1>
+    <nav class="pc-menu">
+      <ul>
+        <li><a href="#">
+          <span>車を探す</span>
+          <span class="en">SEARCH</span>
+        </a></li>
+        <li><a href="#">
+          <span>購入ガイド</span>
+          <span class="en">GUIDE</span>
+        </a></li>
+        <li><a href="#">
+          <span>サービス</span>
+          <span class="en">SERVICE</span>
+        </a></li>
+        <li><a href="#">
+          <span>店舗情報</span>
+          <span class="en">SHOP</span>
+        </a></li>
+        <li><a href="#">
+          <span>お問い合わせ</span>
+          <span class="en">CONTACT</span>
+        </a></li>
+      </ul>
+    </nav>
+
+<!-- ハンバーガーメニュー -->
+    <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+  </button>
+
+  <nav class="sp-menu" id="sp-menu">
+    <ul>
+      <li><a href="#">車を探す</a></li>
+      <li><a href="#">車を売る</a></li>
+      <li><a href="#">車検見積もり</a></li>
+      <li><a href="#">整備</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+  </nav>
+    </div>
+  </header>
+
+<!-- メインビジュアル -->
+  <main>
+    <section img class="main-visual">
+      <img src="img/mv1.png" alt="メインビジュアル1枚目">
+    </section>
+
+<!-- ------------------------------- -->
+<!-- 検索フォーム                          -->
+<!-- ------------------------------- -->
+<!-- 検索見出し -->
+<div class="heading">
+<h2>
+  <span>条件から探す</span>
+  <span class="en">SEARCH</span>
+</h2>
+</div>
+
+
+<!-- 検索本体 -->
+  <form class="search-form">
+<!-- メーカー -->
+    <div class="form-item">
+    <label for="maker">メーカー</label>
+    <select id="maker">
+      <option value="" selected disabled>メーカーを選択</option>
+      <option value="toyota">トヨタ</option>
+      <option value="honda">ホンダ</option>
+    </select>
+    </div>
+<!-- 車種 -->
+    <div class="form-item">
+    <label for="type">車種</label>
+    <select id="type">
+      <option value="" selected disabled>車種を選択</option>
+      <option value="suv">SUV</option>
+      <option value="sedan">セダン</option>
+    </select>
+    </div>
+
+<!-- ボディタイプ -->
+    <div class="form-item">
+      <label for="bodytype">ボディタイプ</label>
+      <select id="bodytype">
+        <option value="" selected disabled>ボディタイプを選択</option>
+        <option value="suv">SUV</option>
+        <option value="minivan">ミニバン</option>
+        <option value="kei-car">軽自動車</option>
+      </select>
+    </div>
+
+<!-- 価格帯 -->
+    <div class="form-item">
+      <label for="price">価格</label>
+      <select  id="price">
+        <option value="" selected disabled>価格帯を選択</option>
+        <option value="under-100">100万未満</option>
+        <option value="100-200">100~200万</option>
+        <option value="over-200">200万以上</option>
+      </select>
+    </div>
+
+<!-- 年式 -->
+    <div class="form-item">
+      <label for="year">年式</label>
+      <select id="year">
+        <option value="" selected disabled>年式を選択</option>
+        <option value="after-2020">2020年以降</option>
+        <option value="2015-2019">2015年~2019年</option>
+        <option value="before-2014">2014年以降</option>
+      </select>
+    </div>
+<!-- 走行距離 -->
+    <div class="form-item">
+      <label for="mileage">走行距離</label>
+      <select id="mileage">
+        <option value="" selected disabled>走行距離を選択</option>
+        <option value="under-1">1万km未満</option>
+        <option value="1~3">1~3万km</option>
+        <option value="3~5">3~5万km</option>
+        <option value="over-5">5万km以上</option>
+      </select>
+    </div>
+<!-- 検索ボタン -->
+    <div class="form-item search-button">
+    <p id="search-result"></p>
+    <button type="submit" >検索</button>
+    </div>
+  </form>
+    
+<!-- ------------------------------- -->
+<!-- 人気の条件から探す                       -->
+<!-- ------------------------------- -->
+  <div class="popular-search">
+    <h3>
+      <span>人気の条件から探す</span>
+      <span class="en">POPULAR SEARCH</span>
+
+    </h3>
+    <div class="popular-search-list">
+      <ul>
+        <li><a href="#"><img src="img/popular-search-list1.png" alt="SUVの写真1枚目">SUV</a></li>
+        <li><a href="#"><img src="img/popular-search-list2.png" alt="SUVの写真2枚目">SUV</a></li>
+        <li><a href="#"><img src="img/popular-search-list3.png" alt="SUVの写真3枚目">SUV</a></li>
+        
+      </ul>
+    </div>
+
+  </div>
+  
+<!-- ------------------------------- -->
+<!-- 購入ガイド                           -->
+<!-- ------------------------------- -->
+  <div class="guide">
+    <h2>
+      <span>購入ガイド</span>
+      <span class="en">GUIDE</span>
+    </h2>
+
+    <ul>
+      <li><a href="#">初めての方へ</a></li>
+      <li><a href="#">購入の流れ</a></li>
+    </ul>
+
+  </div>
+
+<!-- ------------------------------- -->
+<!-- サービス                            -->
+<!-- ------------------------------- -->
+  <div class="service">
+    <h2>
+      <span>サービス</span>
+      <span class="en">SERVICE</span>
+
+    </h2>
+    <ul>
+      <li><img src="img/service1.png" alt="サービス1枚目"></li>
+      <li><img src="img/service2.png" alt="サービス2枚目"></li>
+      <li><img src="img/service3.png" alt="サービス3枚目"></li>
+      <li><img src="img/service4.png" alt="サービス4枚目"></li>
+    </ul>
+  </div>
+
+<!-- ------------------------------- -->
+<!-- お問い合わせ                          -->
+<!-- ------------------------------- -->
+
+  <div class="contact">
+    <div class="contact-inner">
+      <h3>
+        <span>サービスに関するお問い合わせ</span>
+        <span>0120-34-4932</span>
+      </h3>
+      <ul>
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="#">来店予約</a></li>
+      </ul>
+    </div>
+  </div>
+
+<!-- ------------------------------- -->
+<!-- ヘッダー（下）               -->
+<!-- ------------------------------- -->
+  <div class="header-bottom">
+    <h1><img src="img/rogo black.png" alt="ロゴ 黒"></h1>
+    <nav>
+      <ul> 
+        <span>
+            <li><a href="#">>車を探す</a></li>
+            <li><a href="#">>車を売る</a></li>
+            <li><a href="#">>車検見積もり</a></li>
+        </span>
+        <span>
+          <li><a href="#">>整備</a></li>
+          <li><a href="#">>お問い合わせ</a></li>
+        </span>
+      </ul>
+    </nav>
+
+  </div>
+
+
+<!-- ------------------------------- -->
+<!-- メディアクエリ                         -->
+<!-- ------------------------------- -->
+  
+
+
+  </main>
+</body>
+</html>

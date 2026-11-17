@@ -1,0 +1,507 @@
+
+
+body{
+  margin: 0;
+}
+/* ヘッダー */
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px;
+  background-color: #fff;
+}
+
+nav ul{
+  display: flex;
+  gap: 80px;
+  list-style: none;
+}
+
+nav a{
+  text-decoration: none;
+  color:#000000;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+
+nav a span.en{
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.menu-button,
+.sp-menu{
+  display: none;
+}
+
+
+/* ロゴ */
+h1 img{
+  width: 150px;
+  height: auto;
+  margin-left: 40px;
+}
+/* メインビジュアル */
+.main-visual img{
+  width:100%;
+  height: auto;
+}
+/* 検索フォーム */
+.search-form{
+  display: grid;
+  grid-template-columns:300px 300px 300px;
+  gap: 20px;
+  padding: 30px 40px;
+  background-color:#EDEDED;
+  justify-self: center;
+  
+}
+
+
+.form-item{
+  display: flex;
+  flex-direction: column;
+  
+
+
+}
+
+.search-form select{
+  width: 300px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+  padding-left: 15px;
+}
+
+.search-button{
+  grid-column: 1/4;
+  text-align: center;
+  justify-self: center;
+  
+
+}
+
+.search-button button{
+  background-color: #2B334C;
+  color: #fff;
+  width: 900px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* 見出し */
+
+.heading{
+  max-width: 1020px;
+  margin:0 auto;
+}
+
+.heading h2,
+.service h2,
+.guide h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: #1B243E;
+  color: #fff;
+  padding-left: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 300px;
+  height: 50px;
+  clip-path: polygon(
+  0% 0%,
+  100% 0%,
+  90% 100%,
+  0% 100%
+  );
+
+}
+
+
+.heading h2 .en{
+  font-size: 14px;
+}
+
+/* 人気の条件から探す */
+.popular-search{
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.popular-search h3{
+  margin-bottom: 16px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: normal;
+
+}
+
+.popular-search h3 .en{
+  font-size: 16px;
+}
+
+.popular-search-list ul{
+  display:flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+  padding-left: 0;
+  
+}
+
+.popular-search-list ul img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.popular-search-list ul a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #1B243E;
+  
+}
+
+/* 購入の流れ */
+.guide{
+  max-width: 1020px;
+  margin:0 auto;
+
+}
+
+.guide h2 .en{
+  font-size: 16px;
+}
+
+.guide ul {
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+  
+}
+
+.guide a{
+  text-decoration: none;
+  color: #000;
+  
+}
+
+.guide li{
+  list-style: none;
+  background-color: #D9D9D9;
+  width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* サービス */
+.service{
+  max-width: 1020px;
+  margin: 0 auto ;
+}
+
+
+.service h2 .en{
+  font-size: 14px;
+}
+
+.service ul img{
+  width: 1020px;
+  height: auto;
+  display: block;
+}
+
+.service li{
+  list-style: none;
+}
+
+.service ul{
+  padding-left: 0;
+}
+
+/* お問い合わせ */
+.contact{
+  max-width: 1020px;
+  margin: 0 auto;
+  background-color:#D9D9D9;
+  margin-top: 32px;
+  width: 1020px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-inner{
+  width: 920px;
+  height: 200px;
+  background: white;
+  margin: 0 auto;
+  
+}
+
+
+.contact h3{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.contact ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-left: 0;
+  
+
+
+}
+
+.contact li{
+  
+  list-style: none;
+  text-align: center;
+  background-color: #D9D9D9;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+
+}
+
+.contact a{
+  text-decoration: none;
+  color: black;
+  
+  
+  
+
+}
+
+
+/* ヘッダー（下） */
+
+.header-bottom{
+  background-color: #182753;
+  display: flex;
+  padding: 10px 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+.header-bottom h1{
+  margin: 0;
+
+}
+
+
+.header-bottom a{
+  color: white;
+
+}
+
+.header-bottom span{
+  display: contents;
+}
+
+/* メディアクエリ */
+@media(max-width:768px){
+
+  /* ヘッダー */
+  .header-inner{
+    margin: 0;
+    padding: 0;
+    padding-left: 8px;
+    flex-wrap: wrap;
+    
+  }
+  .header-inner img{
+    margin: 0;
+    width: 100px;
+    height: auto;
+  }
+
+/* ハンバーガーメニュー */
+
+  .menu-button{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-style: none;
+    background:white;
+  }
+
+  .menu-button span{
+    display: block;
+    width: 48px;
+    height: 2px;
+    gap: 16px;
+    background-color: black;
+    transition: transform 0.3s;
+  }
+
+  
+  .pc-menu{
+    display: none;
+  }
+
+  .sp-menu{
+    display: none;
+    width: 100%;
+    
+  }
+
+  .sp-menu.is-open{
+    display: block;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    
+  }
+  .menu-button.is-open span:nth-child(2){
+    display: none;
+  }
+  .menu-button.is-open span:nth-child(1)
+  {
+    transform: rotate(45deg)translateX(2px);
+  }
+  .menu-button.is-open span:nth-child(3)
+  {
+    transform: translateY(-9px)translateX(-2px)rotate(-45deg);
+  }
+
+  
+
+
+
+  .sp-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0;
+    
+  }
+
+  
+  /* 検索フォーム */
+  .search-form{
+  grid-template-columns:1fr; 
+  }
+
+  .search-button{
+    grid-column: auto;
+  }
+  .search-button button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  /* 　人気の条件 */
+  .popular-search{
+    width: 100%;
+  }
+  .popular-search .popular-search-list ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    
+  }
+  /* 購入ガイド */
+  .guide ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  /* サービス */
+  .service ul img{
+    width: 100%;
+    height: auto;
+
+  }
+  /* お問い合わせ */
+  .contact{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .contact-inner{
+    width: 100%;
+    height: auto;
+
+  }
+
+  .contact ul{
+    display: flex;
+    flex-direction: column;
+  }
+  /* ヘッダー（下） */
+
+  .header-bottom{
+    margin: 0;
+    padding: 0;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .header-bottom h1 {
+  margin: 0;
+  align-self: flex-start;
+  }
+
+  .header-bottom img{
+    margin: 0;
+    width: 100px;
+    height: auto;
+    padding: 0;
+    
+    
+
+  }
+
+  .header-bottom nav ul{
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    justify-items: start;
+    margin: 0 auto;
+
+  }
+
+  
+
+
+}
+
+
